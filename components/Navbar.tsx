@@ -32,22 +32,22 @@ const Navbar = () => {
       <Box>
           <NextLink href="/blog" passHref>
               <Button
-                  as="a"
-                  variant="ghost"
-                  p={[1, 2, 4]}
-                  _hover={{ backgroundColor: navHoverBg[colorMode] }} backgroundColor={router.pathname.includes('/blog') ? navHoverBg[colorMode] : null}
-                  aria-label="Blog"
+                as="a"
+                variant="ghost"
+                p={[1, 2, 4]}
+                _hover={{ backgroundColor: navHoverBg[colorMode] }} backgroundColor={router.pathname.includes('/blog') ? navHoverBg[colorMode] : null}
+                aria-label="Blog"
               >
                   Blog
               </Button>
           </NextLink>
           <NextLink href="/projects" passHref>
               <Button
-                  as="a"
-                  variant="ghost"
-                  p={[1, 2, 4]}
-                  _hover={{ backgroundColor: navHoverBg[colorMode] }} backgroundColor={router.pathname === '/projects' ? navHoverBg[colorMode] : null}
-                  aria-label="Projects"
+                as="a"
+                variant="ghost"
+                p={[1, 2, 4]}
+                _hover={{ backgroundColor: navHoverBg[colorMode] }} backgroundColor={router.pathname === '/projects' ? navHoverBg[colorMode] : null}
+                aria-label="Projects"
               >
                   Projects
               </Button>
